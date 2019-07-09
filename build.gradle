@@ -1,0 +1,22 @@
+plugins {
+	id 'java'
+	
+	id 'eclipse'
+	id 'idea'
+	
+	id 'maven'
+	id 'maven-publish'
+}
+
+dependencies {
+	testImplementation 'junit:junit:4.12'
+	compile group: 'com.typesafe', name: 'config', version: '1.3.4'
+	compile group: 'org.yaml', name: 'snakeyaml', version: '1.24'
+}
+
+group = "com.kmecpp"
+version = project_version
+
+repositories {
+	jcenter()
+}
